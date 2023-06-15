@@ -14,9 +14,9 @@ const TodoCreate = ({createTodo})=>{
     setTitle("")
   }
     return(
-        <form onSubmit={handleSubmitAddTodo} className=" dark:bg-gray-800 overflow-hidden rounded-md bg-white py-4 flex gap-4 items-center px-4 ">
+        <form onSubmit={handleSubmitAddTodo} className=" dark:bg-gray-800 overflow-hidden rounded-md bg-white py-4 flex gap-4 items-center px-4 transition-all duration-1000">
           <input 
-            className=" dark:bg-gray-800 w-full text-gray-500  dark:text-gray-400 outline-none" 
+            className=" dark:bg-gray-800 w-full text-gray-500  dark:text-gray-400 outline-none transition-all duration-1000" 
             type="text" 
             placeholder="Create new todo..."
             value = {title}
