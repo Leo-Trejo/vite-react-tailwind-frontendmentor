@@ -6,7 +6,7 @@ import React from "react"
 const TodoItem = React.forwardRef(({todo,removeTodo, updateTodo, ...props},ref)=>{
   const  {id,title,completed} = todo
     return(
-        <article {...props} ref={ref} className=" flex gap-4 py-4 border-b-gray-400 border-b px-4  transition-all duration-1000  ">
+        <article {...props} ref={ref} className=" flex gap-4 py-4 border-b-gray-400 border-b px-4    ">
               
               <button 
                 onClick={()=>updateTodo(id)} 
